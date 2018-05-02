@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    width: 65%;
+    margin-left: 15%;
+    color: #eee;
+}
+h1,h3,li,h2{
+    color: #eee;
+}
+
+body {
+    font-size: 18px;
+    line-height: 26px;
+    font-family: "Roboto", sans-serif;
+    background-color: #3f1a07;
+    background-size: contain;
+}
+
+.gamebody {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    justify-content: center;
+    display: grid;
+    border-radius: 100px;
+    margin: 1%;
+    border: none;
+    background-image: url("../img/lava.jpg");
+    background-size: cover;
+}
+
+.item_start {
+    padding-top: 5%;
+    display: grid;
+    margin: 0 auto;
+}
+
+.start_field{
+     padding-top: 5%;
+    display: grid;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.name{
+    color: #eee;
+    display: grid;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 25%;
+    background-color: #f5b2;
+    border-color: #254234;
+}
+
+.send{
+    display: grid;
+    position: absolute;
+    margin: 0 auto;
+    border-radius: 25%;
+    color: #000000;
+    background-color: #eee;
+   
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-left: 140px;
+}
+.clear{
+    display: grid;
+    position: absolute;
+    margin: 0 auto;
+    border-radius: 25%;
+    background-color: #eee;
+   
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-left: 258px;
+}
+
+.card-pic {
+    width: 63px;
+    height: 89px;
+}
+
+.cardback_select {
+    margin: 10% auto;
+}
+
+.button {
+    padding-top: 20px;
+    font-size: 18px;
+    width: 30%;
+    margin: 0 auto 10% auto;
+    padding-bottom: 5%;
+    background-color: #eee;
+    border-radius: 20px;
+    border: 5px solid;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: green;
+    background-color: #FFFF25;
+}
+
+ul {
+    margin-left: 15%
+}
+
+.timer {
+    border: 2px solid;
+    padding: 0 3px;
+    background-color: #880017;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 5%;
+    font-size: 200%;
+    line-height: 120%;
+}
+
+.cardback label,
+.difficulty label {
+    cursor: pointer;
+}
+
+.card1,
+.card2,
+.card3 {
+    background-size: cover;
+}
+
+.card1 {
+    background: url("../img/card1.jpg");
+}
+
+.card2 {
+    background: url("../img/card2.jpg")
+}
+
+.card3 {
+    background: url("../img/card3.jpg")
+}
+
+.info {
+    margin: -10px;
+}
+
+.easy {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.medium {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.hard {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.card {
+     margin-top: 40px;
+    width: 63px;
+    height: 89px;
+    margin: 10px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.back {
+    position: absolute;
+    width: 63px;
+    height: 89px;
+    font-size: 42px;
+    color:white;
+    background-color: #e31f0f;
+    text-align: center;
+    padding-top: 25px;
+    
+    border-radius: 10px;
+    backface-visibility: hidden;
+    transform: rotateY( 180deg);
+}
+
+.front {
+   
+    position: absolute;
+    width: 63px;
+    height: 89px;
+    border-radius: 10px;
+    backface-visibility: hidden;
+}
+
+.flipped {
+    transform: rotateY( 180deg);
+}
+
+.disappear {
+    opacity: 0;
+    transition: 0.3s linear;
+}
+
+.win_title {
+    font-size: 50px;
+    margin: 40% auto;
+}
+
+.win {
+    display: block;
+    margin: 30% auto;
+}
+.leaders-table{
+    padding-top: 15px;
+    font-size: 18px;
+    width: 30%;
+    margin: 0 auto 10% auto;
+    padding-bottom: 5%;
+    border-radius: 20%;
+    color:  black;
+     text-transform: uppercase;
+    cursor: pointer;
+}
+.leaders-table:hover{
+background-color: #e31f0f;
+
+}
